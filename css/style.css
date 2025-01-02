@@ -1,0 +1,428 @@
+.title {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(135deg, #1e5799, #2ce0bf, #7ddd2c);
+    background-size: 400% 100%; /* Adjusted for smoothness */
+    background-clip: text;
+    -webkit-background-clip: text; /* For better compatibility */
+    animation: gradientMovement 5s ease infinite; /* Changed to 5s for smoother effect */
+  }
+  
+  @keyframes gradientMovement {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.title_footer {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(
+      135deg, #1e5799, #2ce0bf, #7ddd2c
+    );
+    background-size: 500px 100%;
+    background-clip: text;
+  }
+
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Ensure proper spacing */
+.footer .row {
+    margin-bottom: 15px;
+}
+
+
+.blue{
+    background-color: rgb(39, 109, 189);
+}
+
+.blue:hover{
+    background-color: rgb(39, 109, 189,0.5) ;
+}
+
+.green{
+    background-color: rgb(47, 204, 47);
+}
+
+.green:hover{
+    background-color: rgb(47, 204, 47,0.5);
+}
+
+.yellow{
+    background-color: rgb(234, 238, 12);
+}
+
+.yellow:hover{
+    background-color: rgb(234, 238, 12,0.5);
+}
+
+.maroon{
+    background-color: rgb(143, 8, 8);
+}
+
+.maroon:hover{
+    background-color: rgb(143, 8, 8,0.5) ;
+}
+
+
+.card_transparent{
+    background-color: rgba(194, 60, 60, 0.2);
+}
+
+.justify{
+    text-align: justify;
+}
+
+.box_small{
+    width: 55px;
+    height: 55px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.number {
+    font-size: 2rem; /* Adjust the font size of the number */
+    font-weight: bold; /* Optional, for bolder text */
+}
+
+.description {
+    font-size: 1rem; /* Adjust the font size of the description */
+    margin-top: 10px; /* Space between the number and description */
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Resume Container */
+.resume-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease;
+    min-height: 100%; /* Ensure the container has at least 100% height */
+}
+
+/* Hover effect for the resume content */
+.resume-container:hover {
+    background-color: #f0f8ff;
+}
+
+/* Header Section: Name, Job Title, Passport Photo */
+.resume-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resume-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+/* Styling for Passport Photo */
+.passport-photo {
+    width: 120px;               /* Width of the photo */
+    height: 120px;              /* Height of the photo */
+    border-radius: 50%;         /* Makes the photo circular */
+    object-fit: cover;          /* Ensures the image covers the container without stretching */
+    object-position: center;    /* Centers the image within the circle */
+    border: 3px solid #ddd;     /* Optional border around the photo */
+    overflow: hidden;           /* Prevents any part of the image from spilling out of the circle */
+}
+
+.name-title {
+    text-align: left;
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.job-title {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact {
+    font-size: 1em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.contact span {
+    margin-right: 15px;
+}
+
+/* Experience Section */
+.experience {
+    margin-bottom: 30px;
+}
+
+.experience h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.job h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.company {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.duration {
+    font-size: 1em;
+    color: #888;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #bebebe;
+}
+
+/* Education Section */
+.education {
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.degree h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.institution {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.duration {
+    font-size: 1em;
+    color: #888;
+}
+
+/* Skills Section */
+.skills {
+    margin-bottom: 30px;
+}
+
+.skills h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills ul li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Default light theme */
+:root {
+    --background-color: #f0f2f5;
+    --text-color: #212529;
+    --form-background-color: white;
+    --form-border-color: #ccc;
+    --btn-primary-bg: #007bff;
+    --btn-primary-hover-bg: #0056b3;
+  }
+  
+  /* Dark mode styles */
+  .body.dark-mode {
+    --background-color: #212529;
+    --text-color: #f8f9fa;
+    --form-background-color: #343a40;
+    --form-border-color: #6c757d;
+    --btn-primary-bg: #6610f2;
+    --btn-primary-hover-bg: #520dc2;
+  }
+  
+  /* Body styling */
+  .body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Login Form Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 150px); /* Reduce the height to make the login section more compact */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+  
+  /* Login Form Styling */
+  .login-form {
+    background-color: var(--form-background-color);
+    padding: 30px; /* Reduced padding for a more compact form */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--form-border-color);
+  }
+  
+  /* Login Header */
+  .login-header {
+    text-align: center;
+    font-size: 22px; /* Adjust font size for compactness */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+  
+  /* Form Controls (input and select) */
+  .form-control {
+    border-radius: 25px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .btn-primary {
+    width: 100%;
+    border-radius: 25px;
+    padding: 12px;
+    background-color: var(--btn-primary-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--btn-primary-hover-bg);
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .forgot-password a {
+    color: var(--btn-primary-bg);
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .theme-toggle-container .btn {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .theme-toggle-container .btn:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Hide spinner for number input on all browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
